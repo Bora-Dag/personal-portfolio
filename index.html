@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bora Dag | Fullstack Developer</title>
+    <meta name="description" content="Currently studying Computer Programming & Analysis with a focus on full-stack web development. I’m continuously learning technologies like JavaScript, Node.js, and React to improve my skills. Open to new opportunities and always aiming to grow in the tech industry. Feel free to get in touch at info@boradag.com">
+    <link rel="canonical" href="https://boradag.com/" />
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#0d1117" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet" />
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png" />
+    <link rel="manifest" href="favicon/site.webmanifest" />
+    <link rel="shortcut icon" href="favicon/favicon.ico" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://boradag.com/" />
+    <meta property="og:title" content="Bora Dag | Fullstack Developer" />
+    <meta property="og:description" content="Currently studying Computer Programming & Analysis with a focus on full-stack web development. I’m continuously learning technologies like JavaScript, Node.js, and React to improve my skills. Open to new opportunities and always aiming to grow in the tech industry. Feel free to get in touch at info@boradag.com" />
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://boradag.com/" />
+    <meta property="twitter:title" content="Bora Dag | Fullstack Developer" />
+    <meta property="twitter:description" content="Currently studying Computer Programming & Analysis with a focus on full-stack web development. I’m continuously learning technologies like JavaScript, Node.js, and React to improve my skills. Open to new opportunities and always aiming to grow in the tech industry. Feel free to get in touch at info@boradag.com" />
+  </head>
+  <body class="flex flex-col min-h-screen bg-[#0d1117] text-white">
+    <canvas id="particle-canvas" class="fixed top-0 left-0 w-full h-full z-0 pointer-events-none"></canvas>
+    <!-- CONTAINED NAVBAR -->
+    <div class="mt-6">
+      <nav class="max-w-4xl mx-auto px-4 py-3 bg-[#0d1117] border border-[#1f2937] rounded-xl shadow-md flex items-center justify-between gap-6 relative">
+        <!-- Logo -->
+        <span class="text-white font-bold text-lg">{Bora Dag}</span>
+        <!-- Menu Button (Mobile Only) -->
+        <button id="menuToggle" class="md:hidden text-white text-2xl focus:outline-none"> ⋮ </button>
+        <!-- Navigation Links -->
+        <div id="navLinks" class="hidden md:flex flex-col md:flex-row gap-4 absolute md:static top-16 right-6 bg-[#0d1117] border border-[#1f2937] md:border-none rounded-xl px-4 py-3 md:py-0 md:px-0 shadow-md transition-all duration-300 ease-in-out z-40">
+          <a href="#home" class="text-sm text-white hover:text-purple-400 flex items-center gap-1">🏠 Home</a>
+          <a href="#education" class="text-sm text-white hover:text-purple-400 flex items-center gap-1">🎓 Education</a>
+          <a href="#skills" class="text-sm text-white hover:text-purple-400 flex items-center gap-1">🛠️ Skills</a>
+          <a href="#repos" class="text-sm text-white hover:text-purple-400 flex items-center gap-1">📦 Projects</a>
+          <a href="#contact" class="text-sm text-white hover:text-purple-400 flex items-center gap-1">✉️ Contact</a>
+        </div>
+      </nav>
+    </div>
+    <main class="max-w-4xl mx-auto px-4 mt-10 flex-grow">
+      <!-- HERO SECTION -->
+      <section id="home" data-aos="fade-up" class="pt-8 mb-20 flex flex-col gap-10">
+        <!-- Profile -->
+        <div class="flex flex-col md:flex-row items-center gap-8">
+          <img src="images/profile.svg" alt="Profile Picture" class="w-32 h-32 rounded-xl object-cover shadow-md" />
+          <div>
+            <h1 class="text-3xl font-bold mb-2"> Hey! I'm <span class="text-blue-400">Bora</span>
+            </h1>
+            <p class="text-gray-300 max-w-xl"> Currently studying Computer Programming & Analysis with a focus on full-stack web development. I’m continuously learning technologies like JavaScript, Node.js, and React to improve my skills. Open to new opportunities and always aiming to grow in the tech industry. Feel free to get in touch at <a href="mailto:info@boradag.com" class="text-blue-400 hover:underline">info@boradag.com</a>
+            </p>
+          </div>
+        </div>
+        <!-- Get in Touch -->
+        <div id="contact" data-aos="fade-up" data-aos-delay="200" class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+          <!-- GitHub -->
+          <div class="bg-[#161b22] p-4 rounded-lg flex items-center gap-4">
+            <img src="images/github-icon.svg" alt="GitHub" class="w-6 h-6 filter brightness-0 invert" />
+            <div>
+              <p class="text-sm font-semibold">Github</p>
+              <a href="https://github.com/Bora-Dag" target="_blank" class="text-blue-400 text-sm hover:underline"> @Bora-Dag </a>
+            </div>
+          </div>
+          <!-- LinkedIn -->
+          <div class="bg-[#161b22] p-4 rounded-lg flex items-center gap-4">
+            <img src="images/linkedin-icon.svg" alt="LinkedIn" class="w-6 h-6 filter brightness-0 invert" />
+            <div>
+              <p class="text-sm font-semibold">LinkedIn</p>
+              <a href="https://www.linkedin.com/in/boradag/" target="_blank" class="text-blue-400 text-sm hover:underline"> @Bora Dag </a>
+            </div>
+          </div>
+          <!-- Instagram -->
+          <div class="bg-[#161b22] p-4 rounded-lg flex items-center gap-4">
+            <img src="images/instagram-icon.svg" alt="Instagram" class="w-6 h-6 filter brightness-0 invert" />
+            <div>
+              <p class="text-sm font-semibold">Instagram</p>
+              <a href="https://www.instagram.com/bora.dag.00/" target="_blank" class="text-blue-400 text-sm hover:underline"> @bora.dag.00 </a>
+            </div>
+          </div>
+          <!-- Email -->
+          <div class="bg-[#161b22] p-4 rounded-lg flex items-center gap-4 sm:col-span-3">
+            <img src="images/mail-icon.svg" alt="Email" class="w-6 h-6 filter brightness-0 invert" />
+            <div>
+              <p class="text-sm font-semibold">E-Mail</p>
+              <a href="mailto:info@boradag.com" class="text-blue-400 text-sm hover:underline"> info@boradag.com </a>
+            </div>
+          </div>
+        </div>
+        <!-- EDUCATION SECTION -->
+        <section data-aos="fade-up" data-aos-delay="400" id="education" class="mb-1 mt-1">
+          <h2 class="text-2xl font-semibold mb-6 flex items-center gap-2"> Education <span>🎓</span>
+          </h2>
+          <div class="flex flex-col gap-6">
+            <!-- Card 1 -->
+            <div class="bg-[#161b22] p-4 rounded-xl flex gap-4 items-center shadow hover:scale-[1.01] transition-transform">
+              <img src="images/seneca.png" alt="Seneca Polytechnic" class="w-20 h-20 rounded-md object-cover" />
+              <div>
+                <span class="inline-block bg-gray-700 text-white text-xs px-2 py-1 rounded-full mb-1"> 2024–Present </span>
+                <h3 class="text-base font-semibold">Computer Programming & Analysis (CPA)</h3>
+                <p class="text-sm text-gray-400">Seneca Polytechnic</p>
+              </div>
+            </div>
+            <!-- Card 2 -->
+            <div class="bg-[#161b22] p-4 rounded-xl flex gap-4 items-center shadow hover:scale-[1.01] transition-transform">
+              <img src="images/humber.jpg" alt="Humber College" class="w-20 h-20 rounded-md object-cover" />
+              <div>
+                <span class="inline-block bg-gray-700 text-white text-xs px-2 py-1 rounded-full mb-1"> 2022–2023 </span>
+                <h3 class="text-base font-semibold">English for Academic Purposes (EAP)</h3>
+                <p class="text-sm text-gray-400">Humber College</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- SKILLS SECTION -->
+        <section data-aos="fade-up" data-aos-delay="600" id="skills" class="mb-2">
+          <h2 class="text-2xl font-semibold mb-6 flex items-center gap-2"> Skills <span>🛠️</span>
+          </h2>
+          <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
+            <!-- JS -->
+            <div class="bg-[#161b22] p-6 rounded-lg flex flex-col items-center hover:scale-105 transition-transform">
+              <img src="images/javascript-icon.svg" alt="JavaScript" class="w-12 h-12 mb-2" />
+              <p class="text-sm">JavaScript</p>
+            </div>
+            <!-- HTML -->
+            <div class="bg-[#161b22] p-6 rounded-lg flex flex-col items-center hover:scale-105 transition-transform">
+              <img src="images/html-icon.svg" alt="HTML" class="w-12 h-12 mb-2" />
+              <p class="text-sm">HTML5</p>
+            </div>
+            <!-- CSS -->
+            <div class="bg-[#161b22] p-6 rounded-lg flex flex-col items-center hover:scale-105 transition-transform">
+              <img src="images/css-icon.svg" alt="CSS" class="w-12 h-12 mb-2" />
+              <p class="text-sm">CSS3</p>
+            </div>
+            <!-- Node.js -->
+            <div class="bg-[#161b22] p-6 rounded-lg flex flex-col items-center hover:scale-105 transition-transform">
+              <img src="images/nodejs-icon.svg" alt="Node.js" class="w-12 h-12 mb-2" />
+              <p class="text-sm">Node.js</p>
+            </div>
+            <!-- SQLOracle -->
+            <div class="bg-[#161b22] p-6 rounded-lg flex flex-col items-center hover:scale-105 transition-transform">
+              <img src="images/sql-icon.svg" alt="SQLOracle" class="w-12 h-12 mb-2" />
+              <p class="text-sm">SQLOracle</p>
+            </div>
+            <!-- MongoDB -->
+            <div class="bg-[#161b22] p-6 rounded-lg flex flex-col items-center hover:scale-105 transition-transform">
+              <img src="images/mongodb-icon.svg" alt="MongoDB" class="w-12 h-12 mb-2" />
+              <p class="text-sm">MongoDB</p>
+            </div>
+          </div>
+        </section>
+        <!-- REPOSITORIES SECTION -->
+        <section data-aos="fade-up" data-aos-delay="800" id="repos" class="mb-2">
+          <h2 class="text-2xl font-semibold mb-6 flex items-center gap-2"> Repositories <span>📦</span>
+          </h2>
+          <div id="repo-container" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-4">
+          </div>
+        </section>
+    </main>
+    <!-- BACK TO TOP BUTTON -->
+    <button id="backToTop" class="hidden fixed bottom-6 right-6 bg-[#161b22] text-white text-xl p-3 rounded-full shadow-md hover:bg-[#1f2937] transition-opacity duration-300 z-50"> ⬆ </button>
+    <!-- FOOTER -->
+    <footer class="pt-6 pb-10 text-center text-sm text-gray-400">
+      <p>Made with <code>&lt;code&gt;</code> & ☕ by Bora Dag — 2025. </p>
+    </footer>
+    <script src="scripts/titleSwitch.js" defer></script>
+    <script src="scripts/navbar.js" defer></script>
+    <script src="scripts/livePreviews.js" defer></script>
+    <script src="scripts/app.js" defer></script>
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script src="scripts/animations.js" defer></script>
+    <script src="scripts/particles.js"></script>
+    <script src="scripts/oneko.js"></script>
+    <script src="scripts/backToTop.js" defer></script>
+  </body>
+</html>

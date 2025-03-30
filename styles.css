@@ -1,0 +1,21 @@
+body {
+    font-family: 'Inter', sans-serif;
+  }
+html {
+    scroll-behavior: smooth;
+}
+
+@keyframes dropdown {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-dropdown {
+  animation: dropdown 0.3s ease-out;
+}
